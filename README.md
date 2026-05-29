@@ -387,7 +387,15 @@ If you use the NeuMa PreProcessed dataset in your work, please cite the original
 NeuMa PreProcessed: A multimodal Neuromarketing dataset
 Available at: https://figshare.com/articles/dataset/NeuMa_PreProcessed_A_multimodal_Neuromarketing_dataset/22117124
 ```
+---
+## Key Literature & Architectural Inspirations
 
+This project’s feature engineering and model architecture were directly informed by recent academic research in neuromarketing and biometric deep learning:
+
+* **Multimodal Fusion & Subconscious States:** Moving beyond standard binary "Buy/No-Buy" predictions, we engineered the *Hidden Interest* label to capture subconscious preferences, inspired by **Hakim et al. (2024)** and the multimodal fusion techniques demonstrated by **Usman et al. (2025)**.
+* **Cognitive Overload Feature Engineering:** Our decision to heavily weight eye-tracking variability (standard deviation of gaze duration) when calculating Cognitive Overload was grounded in the gaze-variability findings by **Y. Liu et al. (2018)**, which we further enhanced by fusing it with EEG signal variance.
+* **Deep Learning Temporal Architecture:** The selection of 1D CNNs and LSTMs for processing biometric time-series data was driven by the architectural successes in EEG-based behavior analysis outlined by **J. Wang et al. (2021)** and **M. Q. Pérez et al. (2024)**.
+---
 ---
 
 ## Contact
